@@ -1,0 +1,63 @@
+/* Text changes */
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: gray;
+}
+
+.shipping {
+  text-transform: uppercase;
+}
+
+.details {
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 25px;
+}
+
+/* Link declarations */
+
+a:link {
+  color: black;
+  font-weight: bold;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: red;
+}
+
+/* botton declarations */
+
+button {
+  background-color: black;
+  color: white;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  border: white;
+}
+
+/* whole product declarations */
+
+.whole-product {
+  border: solid 5px black;
+}
+
+/* list changes */
+
+.list-1 {
+  list-style-type: square;
+}
