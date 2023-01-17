@@ -1,5 +1,10 @@
 /* Text changes */
 
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
 .title {
   text-transform: uppercase;
   text-align: center;
