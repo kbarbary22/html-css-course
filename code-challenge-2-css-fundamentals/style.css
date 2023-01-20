@@ -1,3 +1,15 @@
+/* universal reset */
+
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.all-content {
+  width: 825px;
+  margin: 50px auto;
+}
+
 /* Text changes */
 
 body {
@@ -8,15 +20,18 @@ body {
 .title {
   text-transform: uppercase;
   text-align: center;
-  background-color: gray;
+  background-color: #f7f7f7;
+  padding: 15px 0;
 }
 
 .shipping {
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .details {
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .price {
@@ -31,7 +46,7 @@ a:link {
 }
 
 a:visited {
-  color: purple;
+  color: black;
 }
 
 a:hover {
@@ -42,17 +57,25 @@ a:active {
   color: red;
 }
 
+.link {
+  margin-bottom: 25px;
+}
+
 /* botton declarations */
 
 button {
   background-color: black;
   color: white;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 button:hover {
   color: black;
   background-color: white;
-  border: white;
+  border-top: black 5px solid;
 }
 
 /* whole product declarations */
@@ -65,4 +88,13 @@ button:hover {
 
 .list-1 {
   list-style-type: square;
+}
+
+li {
+  margin-left: 19px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 35px;
 }
