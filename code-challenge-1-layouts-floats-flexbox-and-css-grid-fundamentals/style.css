@@ -3,6 +3,7 @@
 * {
   margin: 0 0;
   padding: 0 0;
+  box-sizing: border-box;
 }
 
 .all-content {
@@ -26,11 +27,12 @@ body {
 
 .shipping {
   text-transform: uppercase;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .details {
   text-transform: uppercase;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -97,13 +99,13 @@ li {
 }
 
 li:last-child {
-  margin-bottom: 35px;
+  margin-bottom: 0px;
 }
 
 /* color boxes */
 
 .all-boxes {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .box-1 {
@@ -165,4 +167,37 @@ li:last-child {
   top: -15px;
   left: -35px;
   letter-spacing: 2px;
+}
+
+/* float coding challange */
+
+.content-box1 {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  height: 250px;
+}
+
+.content-box2 {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.content-box3 {
+  float: right;
+  width: 235px;
+  padding-right: 10px;
+  margin-top: 30px;
+}
+
+.shipping {
+  float: right;
+  margin-top: 5px;
+}
+
+.price {
+  display: inline-block;
+  margin-bottom: 20px;
 }
