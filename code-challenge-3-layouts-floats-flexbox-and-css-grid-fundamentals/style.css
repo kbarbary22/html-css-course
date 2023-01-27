@@ -32,6 +32,7 @@ body {
 .details {
   text-transform: uppercase;
   margin-bottom: 20px;
+  /* margin-top: 20px; */
 }
 
 .price {
@@ -97,7 +98,7 @@ li {
 }
 
 li:last-child {
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
 }
 
 /* color boxes */
@@ -166,6 +167,7 @@ li:last-child {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  /* margin-top: 20px; */
 }
 
 /* grid layout */
@@ -174,4 +176,5 @@ li:last-child {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
+  align-items: center;
 }
