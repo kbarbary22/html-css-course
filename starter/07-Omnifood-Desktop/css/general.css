@@ -29,6 +29,7 @@ Primary Color:#e67e22
 - Shades:
 - Accents:
 - Greys: #555, #333
+#6f6f6f (lighest gray allowed on #fdf2e9)
 
 
 --- 05 Shadows
@@ -60,6 +61,12 @@ Default: 9px
   padding: 0 3.2rem;
 }
 
+.full-width-container {
+  max-width: 100%;
+  margin: 0 auto;
+  /* padding: 0 3.2rem; */
+}
+
 .center-text {
   text-align: center;
 }
@@ -84,6 +91,10 @@ Default: 9px
 
 .grid--center-v {
   align-items: center;
+}
+
+.grid--2-rows {
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .margin-bottom-md {
