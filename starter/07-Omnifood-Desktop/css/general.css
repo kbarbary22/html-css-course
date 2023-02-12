@@ -34,6 +34,7 @@ Primary Color:#e67e22
 
 --- 05 Shadows
 
+box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
 
 ---06 Border-radius
 
@@ -75,6 +76,15 @@ Default: 9px
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -89,6 +99,10 @@ Default: 9px
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -100,6 +114,7 @@ Default: 9px
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
 }
+
 /* this code is just to create and style a sample */
 
 /* .section-how div {
@@ -128,4 +143,72 @@ Default: 9px
 
 strong {
   font-weight: 500;
+}
+
+/* Focus edit */
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+/* Buttons */
+.btn,
+.btn:link,
+.btn:visited {
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  font-family: inherit;
+
+  /* out trasition on original state */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  /* border: 3px solid #fff; */
+  /* trick to add border radius */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: flex-end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
